@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: "Inter", serif;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("https://images.unsplash.com/photo-1444791252404-500e5b11f71b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media only screen and (max-width: 900px) {
+  .wrapper {
+    min-height: 130vh;
+    padding-bottom: 6rem;
+  }
+}
+.wrapper__card {
+  border-radius: 2px;
+  -webkit-box-shadow: 4px 5px 14px 0px rgba(48, 50, 50, 0.55);
+  -moz-box-shadow: 4px 5px 14px 0px rgba(48, 50, 50, 0.55);
+  box-shadow: 4px 5px 14px 0px rgba(48, 50, 50, 0.55);
+  background-color: #f3f3f3;
+  width: 80%;
+  min-height: 80%;
+  position: relative;
+}
+@media only screen and (max-width: 900px) {
+  .wrapper__card {
+    min-height: 100vh;
+    margin-bottom: 4rem;
+    padding-bottom: 1rem;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .wrapper__card {
+    width: 100%;
+  }
+}
+.wrapper__card__forms .svg-bg {
+  height: 87%;
+  width: 45%;
+  position: absolute;
+  right: 5rem;
+  top: 1rem;
+  z-index: 1;
+}
+@media only screen and (max-width: 900px) {
+  .wrapper__card__forms .svg-bg {
+    max-height: 35rem;
+    width: 35rem;
+    top: 3rem;
+    right: 2rem;
+  }
+}
+.wrapper__card__forms .svg-curve {
+  position: absolute;
+  height: 17%;
+  max-width: 100%;
+  bottom: 0;
+  z-index: 1;
+}
+.wrapper__card__forms .svg-quotes {
+  position: absolute;
+  top: 22%;
+  left: 20%;
+  z-index: 1;
+}
+@media only screen and (max-width: 1100px) {
+  .wrapper__card__forms .svg-quotes {
+    top: 40rem;
+    left: 45%;
+  }
+}
+.wrapper__card__forms .arrows {
+  background-color: white;
+  display: inline-block;
+  padding: 1rem;
+  bottom: 5rem;
+  right: 30rem;
+  position: absolute;
+  z-index: 7;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 11px 26px 0px rgba(48, 50, 50, 0.61);
+  -moz-box-shadow: 0px 11px 26px 0px rgba(48, 50, 50, 0.61);
+  box-shadow: 0px 11px 26px 0px rgba(48, 50, 50, 0.61);
+}
+@media only screen and (max-width: 1100px) {
+  .wrapper__card__forms .arrows {
+    right: 20rem;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .wrapper__card__forms .arrows {
+    bottom: 22rem;
+    right: 18rem;
+  }
+}
+.wrapper__card__forms .arrows .arrow:hover {
+  transform: scale(1.2);
+}
+.wrapper__card__forms .arrows .arrow:active {
+  transform: scale(1);
+}
+.wrapper__card__forms .arrows .left {
+  margin-right: 2.5rem;
+}
+.wrapper__card__image {
+  width: 28rem;
+  height: auto;
+  position: absolute;
+  top: -8.5rem;
+  right: 10rem;
+  z-index: 2;
+}
+@media only screen and (max-width: 1100px) {
+  .wrapper__card__image {
+    right: 2rem;
+    top: -3rem;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .wrapper__card__image {
+    position: relative;
+    right: 0;
+    margin: 2rem auto 0;
+  }
+}
+.wrapper__card__content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-top: 12rem;
+  margin-left: 8rem;
+}
+@media only screen and (max-width: 1100px) {
+  .wrapper__card__content {
+    margin-top: 7rem;
+    margin-left: 4rem;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .wrapper__card__content {
+    margin-left: 0;
+    align-items: center;
+  }
+}
+.wrapper__card__content__text {
+  color: #202046;
+  width: 50%;
+  font-size: 1.7em;
+  font-weight: 300;
+  z-index: 5;
+}
+@media only screen and (max-width: 900px) {
+  .wrapper__card__content__text {
+    width: 90%;
+    text-align: center;
+    margin-top: 6rem;
+  }
+}
+.wrapper__card__content__subtext {
+  margin-top: 1rem;
+  z-index: 5;
+  font-size: 1.2em;
+}
+@media only screen and (max-width: 900px) {
+  .wrapper__card__content__subtext {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.wrapper__card__content__subtext-name {
+  color: #202046;
+  font-weight: bold;
+}
+.wrapper__card__content__subtext-title {
+  color: #babacf;
+  font-weight: 500;
+}
+
+.attribution {
+  font-size: 1.1em;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding-bottom: 0.5rem;
+  font-weight: 300;
+}
+@media only screen and (max-width: 900px) {
+  .attribution {
+    top: 130vh;
+    position: absolute;
+  }
+}
+
+.attribution a {
+  color: #4e60a6;
+  font-weight: 500;
+}
+
+.display {
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */
