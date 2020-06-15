@@ -58,9 +58,15 @@ html {
 @media only screen and (max-width: 900px) {
   .wrapper__card__forms .svg-bg {
     max-height: 35rem;
-    width: 35rem;
+    width: auto;
     top: 3rem;
     right: 2rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .wrapper__card__forms .svg-bg {
+    max-height: 30rem;
+    width: auto;
   }
 }
 .wrapper__card__forms .svg-curve {
@@ -109,6 +115,12 @@ html {
     right: 18rem;
   }
 }
+@media only screen and (max-width: 600px) {
+  .wrapper__card__forms .arrows {
+    bottom: 26rem;
+    right: 15rem;
+  }
+}
 .wrapper__card__forms .arrows .arrow:hover {
   transform: scale(1.2);
 }
@@ -137,6 +149,7 @@ html {
     position: relative;
     right: 0;
     margin: 2rem auto 0;
+    width: calc(90% - 2rem);
   }
 }
 .wrapper__card__content {
